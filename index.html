@@ -1,40 +1,11 @@
-int startX = 0;
-int startY = 150;
-int endX = 0;
-int endY = 50;
-void setup()
-{
-  size(300,300);
-  background(0);
-  strokeWeight(3);
-}
-void draw()
-{
-  stroke((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
-  while(endX < 300)
-  {
-    endX = startX +(int)(Math.random()*10);
-    endX = startY +(int)(Math.random()*19)-9;
-    line(startX,startY,endX,endY);
-    startX = endX;
-    startY = endY;
-  }
-}
-void mousePressed()
-{
-  startX = 0;
-  startY = 150;
-  endX = 0;
-  endY = 50;
-}
-		   
-	<!DOCTYPE html>
+	   	<!DOCTYPE html>
 	<head>
 		<meta charset="utf-8">
 		<title>Title</title>
 		<title>Spas Lightning Assignment</title>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="styles.css">
+		<script src="processing.js"></script>
 	</head>
 	<body>
 		<header>
